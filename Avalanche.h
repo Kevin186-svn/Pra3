@@ -10,6 +10,7 @@ class Computer
 {
     public:
         int move_rc;
+        int  test=0;
         //int makeMove();
         int makeMove_RandomComputer();
 };
