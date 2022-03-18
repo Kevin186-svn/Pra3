@@ -1,8 +1,10 @@
-// #include "Computer.h"
+#include "RandomComputer.h"
 
-// using namespace std;
+using namespace std;
 
-// char Computer::makeMove(){
-
-//      return 'R';
-// }
+char Computer::makeMove_RandomComputer{
+     int r;
+     r = rand()%3;
+     move_rc = r;
+     return move_rc;
+}
