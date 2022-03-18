@@ -2,25 +2,9 @@
 
 using namespace std;
 
-// int Referee::get(void)
-// {
-//     return h_op+c_op;
-// }
-
-// void Referee::set( int h, int c){
-//     h_op = h;
-//     c_op = c;
-
-// }
 
 char Referee::refGame(Human player1, Computer player2){
-    //  if(p_h == 'R'){
-    //      h_op = 1;
-    //  }else if(p_h == 'S'){
-    //      h_op = -1;
-    //  }else if(p_h == 'P'){
-    //      h_op = 0;
-    //  }
+     char player1_move = player1.makeMove();
      p2.move_c = 'R';
 
      if(player1.move_h == 'R'){
@@ -29,33 +13,9 @@ char Referee::refGame(Human player1, Computer player2){
          return 'L';
      }else if(player1.move_h == 'P'){
          return 'W';
+     }else{
+          return 'E';
      }
     return 'e';
 
 }
-
-
-// void Referee::judgment(int h, int c){
-//     h_op = h;
-//     c_op = c;
-//     if(h==c){
-//     cout<<"Player choose: "<<h<<endl;
-//     cout<<"Computer choose: "<<c<<endl;
-//     cout<<"Tie"<<endl;
-//     }else if(h + c == 0){
-//     cout<<"Player choose: "<<h<<endl;
-//     cout<<"Computer choose: "<<c<<endl;
-//     cout<<"Rock Win"<<endl;
-//     }
-//     else if(h + c == 1){
-//     cout<<"Player choose: "<<h<<endl;
-//     cout<<"Computer choose: "<<c<<endl;
-//     cout<<"Paper Win"<<endl;
-//     }
-//     else if(h + c == -1){
-//     cout<<"Player choose: "<<h<<endl;
-//     cout<<"Computer choose: "<<c<<endl;
-//     cout<<"Scissors Win"<<endl;
-//     }
-
-// }

@@ -2,6 +2,7 @@
 
 using namespace std;
 
-char Computer::makeMove(){
-     return move_c;
+int Computer::makeMove(){
+
+     return 1;
 }

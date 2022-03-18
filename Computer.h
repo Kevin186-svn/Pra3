@@ -1,18 +1,17 @@
+#ifndef COMPUTER_H
+#define COMPUTER_H
+
 #include <iostream>
 
 using namespace std;
-
-#ifndef COMPUTER_H
-#define COMPUTER_H
 
 
 class Computer
 {
     public:
-        char move_c = 'R';
-        char makeMove();
-        // int get(void);
-        // void set(int o);
+        char move_c;
+        int makeMove();
+        //int makeMove_RandomComputer();
 };
 
 
